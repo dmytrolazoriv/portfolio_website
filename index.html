@@ -23,31 +23,31 @@
                     <nav class="menu">
                         <ul class="menu__main-list">
                             <li class="menu__item">
-                                <a class="menu__link lang" href="#about__me" key="about__me">Послуги</a>
+                                <a class="menu__link" href="#about__me" lang="ua">Послуги</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link lang" href="#skills" key="skills">Навички</a>
+                                <a class="menu__link" href="#skills" lang="ua">Навички</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link lang" href="#portfolio" key="portfolio">Портфоліо</a>
+                                <a class="menu__link" href="#portfolio" lang="ua">Портфоліо</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link menu__link_upper lang" href="#contact__me" key="contact__me">ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</a>
+                                <a class="menu__link menu__link_upper" href="#contact__me" lang="ua">ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</a>
                             </li>
                         </ul>
                         <ul class="menu__lang-list">
                             <li class="menu__lang-item">
-                                <a class="menu__lang-link" id="ua" onclick="setLanguage('ua')">UA&nbsp;&#124;</a>
+                                <a class="menu__lang-link" onclick="window.lang.change('ua'); return false;">UA&nbsp;&#124;</a>
                             </li>
                             <li class="menu__lang-item">
-                                <a class="menu__lang-link" id="en" onclick="setLanguage('en')">&nbsp;ENG</a>
+                                <a class="menu__lang-link" onclick="window.lang.change('en'); return false;">&nbsp;ENG</a>
                             </li>
                         </ul>
                       </nav> <!-- menu -->
                 </div> <!-- header__top -->
                 <div class="header__content">
-                    <p class="header__top-text" key="hi">&#128075;&nbsp;Привіт, я</p>
-                    <h1 class="header__title" key="i">Дмитро Лазорів</h1>
+                    <p class="header__top-text" lang="ua"><span>&#128075;&nbsp;</span>Привіт, я</p>
+                    <h1 class="header__title" lang="ua">Дмитро Лазорів</h1>
                     <p class="header__bott-text">Junior Front-end Developer</p>
                 </div> <!-- header__content -->
                 <div class="header__social-menu">
@@ -75,9 +75,9 @@
             </div> <!-- header__inner -->
         </div> <!-- container -->
         <div class="header__description">
-            <h3 class="header__description-title">ПРО МЕНЕ</h3>
-            <p class="header__description-text">Мене звуть Дмитро, і я люблю створювати речі, які живуть в Інтернеті. Я захоплений тим, щоб втілити в життя як технічні, так і візуальні аспекти цифрових продуктів. <br> Для мене важливий досвід користувача, красиві пікселі та написання чистого, доступного людського коду. Я приділяю увагу деталям, тому що це створює досконалість.</p>
-            <button class="header__description-button" type="button">ЧИТАТИ БІЛЬШЕ</button>
+            <h3 class="header__description-title" lang="ua">ПРО МЕНЕ</h3>
+            <p class="header__description-text" lang="ua" data-lang-token="aboutMe">Мене звуть Дмитро, і я люблю створювати речі, які живуть в Інтернеті. Я захоплений тим, щоб втілити в життя як технічні, так і візуальні аспекти цифрових продуктів. <br> Для мене важливий досвід користувача, красиві пікселі та написання чистого, доступного людського коду. Я приділяю увагу деталям, тому що це створює досконалість.</p>
+            <button class="header__description-button" type="button" lang="ua">ЧИТАТИ БІЛЬШЕ</button>
         </div>
     </header> <!-- header -->
 
@@ -85,9 +85,9 @@
         <section class="about">
             <div class="container">
                 <div class="about__top-part-wrapper">
-                    <h2 class="main__title about__title" id="about__me">ПОСЛУГИ</h2>
-                    <p class="main__text about__text">Я завзятий і орієнтований на високу якість Junior Front-end Developer, який шукає посаду початкового рівня в компанії, щоб використовувати свої навички в програмуванні, вирішенні складних проблем і допомозі у своєчасному завершенні проектів.</p>
-                    <button class="about__button" type="button">ЧИТАТИ БІЛЬШЕ</button>
+                    <h2 class="main__title about__title" id="about__me" lang="ua">ПОСЛУГИ</h2>
+                    <p class="main__text about__text" lang="ua" data-lang-token="servicesDesc">Я завзятий і орієнтований на високу якість Junior Front-end Developer, який шукає посаду початкового рівня в компанії, щоб використовувати свої навички в програмуванні, вирішенні складних проблем і допомозі у своєчасному завершенні проектів.</p>
+                    <button class="about__button" type="button" lang="ua">ЧИТАТИ БІЛЬШЕ</button>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
                 </div> <!-- about__top-part-wrapper -->
                 <div class="about__proficiency-wrapper">
@@ -95,22 +95,22 @@
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">Responsive web design</h4>
                             <!-- Псевдоэлемент для заголовка -->
-                            <p class="about__proficiency-text">Я створюю веб-сторінки, які добре виглядатають на всіх пристроях! Ваш сайт буде добре виглядати на всіх пристроях (настільних ПК, планшетах і телефонах).</p>
+                            <p class="about__proficiency-text" lang="ua" data-lang-token="web">Я створюю веб-сторінки, які добре виглядатають на всіх пристроях! Ваш сайт буде добре виглядати на всіх пристроях (настільних ПК, планшетах і телефонах).</p>
                         </li>
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">Web development</h4>
                             <!-- Псевдоэлемент для заголовка -->
-                            <p class="about__proficiency-text">Займаюсь розробкою веб-сайтів від простої однієї статичної до в міру  складних багатосторінкових сайтів.</p>
+                            <p class="about__proficiency-text" lang="ua" data-lang-token="dev">Займаюсь розробкою веб-сайтів від простої однієї статичної до в міру  складних багатосторінкових сайтів.</p>
                         </li>
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">CMS WEBSITES</h4>
                             <!-- Псевдоэлемент для заголовка -->
-                            <p class="about__proficiency-text">Я створюю сайти під Wordpress. Мені подобається Wordpress тим що, ви можете створити веб-сайт професійного вигляду з величезною функціональністю без надмірних витрат.</p>
+                            <p class="about__proficiency-text" lang="ua" data-lang-token="cms">Я створюю сайти під Wordpress. Мені подобається Wordpress тим що, ви можете створити веб-сайт професійного вигляду з величезною функціональністю без надмірних витрат.</p>
                         </li>
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">MAINTENANCE</h4>
                             <!-- Псевдоэлемент для заголовка -->
-                            <p class="about__proficiency-text">Займаюсь обслуговування веб-сайту та завдань які стосується підтримки належного та актуального функціонування вашого веб-сайту.</p>
+                            <p class="about__proficiency-text" lang="ua" data-lang-token="maintenance">Займаюсь обслуговування веб-сайту та завдань які стосується підтримки належного та актуального функціонування вашого веб-сайту.</p>
                         </li>
                     </ul>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
@@ -120,9 +120,9 @@
         </section> <!-- about -->
         <section class="skills" id="skills">
             <div class="container">
-                <h2 class="main__title skills__h2-title">НАВИЧКИ</h2>
+                <h2 class="main__title skills__h2-title" lang="ua">НАВИЧКИ</h2>
                 <div class="skills__inner">
-                    <h3 class="skills__title">ВИКОРИСТОВУЮ ЗАРАЗ:</h3>
+                    <h3 class="skills__title" lang="ua">ВИКОРИСТОВУЮ ЗАРАЗ:</h3>
                     <ul class="skills__list">
                         <li class="skills__item">
                             <img class="skills__img" width="100" height="100" src="Images/skills-img-1.svg" alt="">
@@ -157,7 +157,7 @@
                             <p class="skills__text">BEM</p>
                         </li>
                     </ul>
-                    <h3 class="skills__title">ВИВЧАЮ:</h3>
+                    <h3 class="skills__title" lang="ua">ВИВЧАЮ:</h3>
                     <ul class="skills__list">
                         <li class="skills__item">
                             <img class="skills__img" width="100" height="100" src="Images/skills-img-12.svg" alt="">
@@ -176,7 +176,7 @@
                             <p class="skills__text">Webpack</p>
                         </li>
                     </ul>
-                    <h3 class="skills__title">ІНШІ НАВИЧКИ:</h3>
+                    <h3 class="skills__title" lang="ua">ІНШІ НАВИЧКИ:</h3>
                     <ul class="skills__list">
                         <li class="skills__item">
                             <img class="skills__img" width="100" height="100" src="Images/skills-img-13.svg" alt="">
@@ -201,13 +201,13 @@
         <section class="portfolio" id="portfolio">
             <!-- <div class="container"> -->
                 <div class="portfolio__title-wrapper">
-                    <h2 class="main__title main__title_no-margins">ПОРТФОЛІО</h2>
+                    <h2 class="main__title main__title_no-margins" lang="ua">ПОРТФОЛІО</h2>
                 </div>
                 <div class="portfolio__gallery-wrapper">
                     <div class="portfolio__controls">
-                        <button class="portfolio__button" type="button">ВСЕ</button>
-                        <button class="portfolio__button" type="button">НАПИСАНО</button>
-                        <button class="portfolio__button" type="button">ДИЗАЙН</button>
+                        <button class="portfolio__button" type="button" lang="ua">ВСЕ</button>
+                        <button class="portfolio__button" type="button" lang="ua">НАПИСАНО</button>
+                        <button class="portfolio__button" type="button" lang="ua">ДИЗАЙН</button>
                     </div>
                     <div class="portfolio__figure-wrapper">
                         <figure class="portfolio__figure">
@@ -278,7 +278,7 @@
                         </figure>
                     </div>
                     <div class="portfolio__footer">
-                        <p class="portfolio__footer-text">І багато інших попереду!</p>
+                        <p class="portfolio__footer-text" data-lang-token="others" lang="ua">І багато інших попереду!</p>
                     </div>
                 </div>
             <!--  </div> container -->
@@ -286,29 +286,29 @@
         <section class="contacts" id="contact__me">
             <div class="container">
                 <div class="contacts__top-part-wrapper">
-                    <h2 class="main__title contacts__title">КОНТАКТИ</h2>
-                    <p class="main__text main__text_pseudo">Надішліть загальне повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами якомога швидше.</p>
+                    <h2 class="main__title contacts__title" lang="ua">КОНТАКТИ</h2>
+                    <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть загальне повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами якомога швидше.</p>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
                 </div>
                 <form class="contacts__form" action="">
-                    <input class="contacts__form-input" type="text" key="name" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*">
-                    <input class="contacts__form-input" type="text" placeholder="ВВЕДІТЬ ВАШ EMAIL*">
-                    <input class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*">
-                    <textarea class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*"></textarea>
-                    <button class="contacts__form-button" type="submit">ВІДПРАВИТИ</button>
+                    <input class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua">
+                    <input class="contacts__form-input" type="text" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua">
+                    <input class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" lang="ua">
+                    <textarea class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" lang="ua"></textarea>
+                    <button class="contacts__form-button" type="submit" lang="ua">ВІДПРАВИТИ</button>
                   </form>
             </div>
         </section> <!-- contacts -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a class="footer__link-backtotop" href="#top">
+                    <a class="footer__link-backtotop" href="#top" lang="ua">
                         <!-- <span class="visually-hidden">Back to Top</span> -->
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.12497 5.3125V8.125L7.49997 5L11.875 8.125V5.3125L7.49997 2.1875L3.12497 5.3125Z" fill="white"/>
                         <path d="M3.12497 9.6875V12.5L7.49997 9.375L11.875 12.5V9.6875L7.49997 6.5625L3.12497 9.6875Z" fill="white"/>
                         </svg>                                
-                        Вгору
+                        ВГОРУ
                     </a>
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
@@ -345,14 +345,15 @@
                         </li>
                     </ul>
                     <p class="footer__copyright-text">
-                        <span>&copy;&nbsp;2022 Дмитро Лазорів</span> Всі права захищені.
+                        <span class="footer__copyright-text_bold">&copy;&nbsp;2022</span><span class="footer__copyright-text_bold" lang="ua"> Дмитро Лазорів</span> <span lang="ua">Всі права захищені.</span>
                     </p>
                 </div> <!-- footer__inner -->
             </div> <!-- container -->
         </footer> <!-- footer -->
     </main> <!-- main -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="jquery.MultiLanguage.js"></script>
+    <script src="js.cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="jquery-lang.js" charset="utf-8" type="text/javascript"></script>
     <script src="script.js"></script>
 </body>
 </html>
