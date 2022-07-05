@@ -65,30 +65,19 @@ $(document).ready(function() {
   });
 });
 
-// var arrLang = {
-//   'ua': {
-//     'about__me': 'Про мене',
-//     'skills': 'Навички',
-//     'portfolio': 'Портфоліо',
-//     'contact__me': 'Зв\'яжіться зі мною'
-//   },
-//   'en': {
-//     'about__me': 'About me',
-//     'skills': 'Skills',
-//     'portfolio': 'Portfolio',
-//     'contact__me': 'CONTACT ME',
-//     'name': "ENTER YOUR NAME*",
-//   },
-// }
+var lang = new Lang();
+
+lang.dynamic('en', 'langpack/en.json');
+lang.dynamic('ua', 'langpack/ua.json');
+
+lang.init({
+  defaultLang: 'ua'
+});
 
 // $(document).ready(function() {
-//   $(function() {
-//     $('.menu__lang-link').click(function() {
-//       var lang = $(this).attr('id');
-
-//       $('.lang').each(function(index, item) {
-//         $(this).text(arrLang[lang][$(this).attr('key')]);
-//       });
-//     });
-//   });
+//   if ($('html').attr('lang' === 'ua')) {
+//     $('html').attr('lang', 'en');
+//   } else {
+//     $('html').attr('lang', 'ua');
+//   }
 // });
