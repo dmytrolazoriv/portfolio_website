@@ -35,14 +35,34 @@
                                 <a class="menu__link menu__link_upper" href="#contact__me" lang="ua">ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</a>
                             </li>
                         </ul>
-                        <ul class="menu__lang-list">
+                        <!-- <ul class="menu__lang-list">
                             <li class="menu__lang-item">
                                 <a class="menu__lang-link" onclick="window.lang.change('ua'); return false;">UA&nbsp;&#124;</a>
                             </li>
                             <li class="menu__lang-item">
                                 <a class="menu__lang-link" onclick="window.lang.change('en'); return false;">&nbsp;ENG</a>
                             </li>
-                        </ul>
+                        </ul> -->
+                        <ul class="social-links">
+                            <li>&#127758;</li>
+                            <li>
+                              <div>
+                                <div id="lang-form">
+                                  <div id="language-selected" class="dropdownbox">УКР&nbsp;&#9660;</div>
+                                  <div id="dropdown-wrapper">
+                                    <ul  class="menu-dropdown" id="select-language-menu"  class="menu-dropdown">
+                                      <li >
+                                        <a class="lang-code" onclick="window.lang.change('en'); return false;">ENG</a>
+                                      </li>
+                                      <li class="selected">
+                                        <a class="lang-code" onclick="window.lang.change('ua'); return false;">УКР</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul> <!-- social-links -->
                       </nav> <!-- menu -->
                 </div> <!-- header__top -->
                 <div class="header__content">
@@ -213,10 +233,11 @@
                         <figure class="portfolio__figure">
                             <div class="portfolio__in-detail-wrapper">
                                 <h3 class="portfolio__in-detail-title">agami</h3>
-                                <p class="portfolio__in-detail-descr">Стоматология АГАМИ - ведущая клиника Москвы</p>
-                                <a class="portfolio__in-detail-link" href="#!">ДЕМО</a>
+                                <p class="portfolio__in-detail-descr" data-lang-token="descr" lang="ua">Стоматологія АГАМІ - провідна клініка Москви</p>
+                                <p class="portfolio__in-detail-used"><span lang="ua">Використовував:</span> Javascript, JQuery, Bootstrap</p>
+                                <a class="portfolio__in-detail-link" href="https://dmytrolazoriv.github.io/agami/" target="_blank" lang="ua">Переглянути проект</a>
                             </div>
-                            <img class="portfolio__img" src="Images/portfolio-photo-1.jpg">
+                            <img class="portfolio__img" src="Images/portfolio-photo-agami.jpg">
                             <figcaption class="portfolio__content">
                                 <h3 class="visually-hidden">Showcase</h3>
                             </figcaption>
@@ -290,9 +311,9 @@
                     <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть загальне повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами якомога швидше.</p>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
                 </div>
-                <form class="contacts__form" action="">
-                    <input class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua">
-                    <input class="contacts__form-input" type="text" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua">
+                <form class="contacts__form" action="mailto:dmytrolazoriv@outlook.com" method="post" enctype="text/plain">
+                    <input class="contacts__form-input"type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua">
+                    <input class="contacts__form-input" type="email" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua">
                     <input class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" lang="ua">
                     <textarea class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" lang="ua"></textarea>
                     <button class="contacts__form-button" type="submit" lang="ua">ВІДПРАВИТИ</button>
