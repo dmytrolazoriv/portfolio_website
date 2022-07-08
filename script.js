@@ -74,10 +74,57 @@ lang.init({
   defaultLang: 'ua'
 });
 
-// $(document).ready(function() {
-//   if ($('html').attr('lang' === 'ua')) {
-//     $('html').attr('lang', 'en');
-//   } else {
-//     $('html').attr('lang', 'ua');
-//   }
-// });
+
+$(document).ready(function() {
+  if ($('html').attr('lang' === defaultLang)) {
+     $('html').attr('lang', 'en');
+   } else {
+     $('html').attr('lang', defaultLang);
+   }
+ });
+
+
+// menu start
+if ($('#language-selected').is(':empty')){
+  $( ".menu-dropdown li" ).each(function() {
+    if($(this).attr('class') == 'selected'){
+      var selected = $(this).find('.lang-code').html().toUpperCase();
+        console.log($(this).find('.lang-code').html().toUpperCase());
+        $("#language-selected").html(selected);
+    }
+  });
+}
+
+// The next following line displays and set selected language
+  $(".dropdownbox").click(function() {
+  $(".menu-dropdown").toggleClass("showMenu");
+    $(".menu-dropdown > li").click(function() {
+      var selected = $(this).find('.lang-code').html().toUpperCase();
+      console.log($(this).find('.lang-code').html().toUpperCase());
+      $("#language-selected").html(selected);
+        var changeText = function(e) {
+        var langSel = $("#language-selected");
+        var textToRep = langSel.text();
+        var newTextUa = textToRep.replace("УКР&#9660;", "УКР&nbsp;&#9660;");
+        var newTextEn = textToRep.replace("ENG&#9660;", "ENG&nbsp;&#9660;");
+        langSel.text(newTextUa);
+        langSel.text(newTextEn);
+      };
+      if ($("#language-selected:contains('ENG&#9660;')")) {
+        $("#language-selected").click(function() {
+          $("#language-selected").text(newTextEn);
+        });
+      } else if ($("#language-selected:contains('УКР&#9660;')")) {
+        $("#language-selected").click(function() {
+          $("#language-selected").text(newTextUa);
+        });
+      }
+      $(".menu-dropdown").removeClass("showMenu");	        
+      });
+  });
+
+  // Close language select box if nothing is selected
+  $("#dropdown-wrapper").mouseleave(function() {
+    $(".menu-dropdown").removeClass("showMenu");
+  });
+// menu end
