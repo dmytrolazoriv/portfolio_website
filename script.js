@@ -24,6 +24,7 @@ $(document).ready(function() {
       $(this).removeClass('portfolio__in-detail-wrapper_hover');
     } else {
       $(this).addClass('portfolio__in-detail-wrapper_hover');
+      $('.portfolio__in-detail-wrapper').css('background-color', 'rgba(0, 0, 0, .8)');
     }
   });
 });
@@ -128,3 +129,33 @@ if ($('#language-selected').is(':empty')){
     $(".menu-dropdown").removeClass("showMenu");
   });
 // menu end
+
+
+// form start
+// $(document).ready(function() { 
+//   // bind 'myForm' and provide a simple callback function 
+//   $('.contacts__form').ajaxForm(function() { 
+//       alert("Thank you for your comment!"); 
+//   }); 
+// });
+// form end
+
+// Submitting a form start
+window.onload = function() {
+  document.getElementById('contacts__form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const parameters = {
+          contacts__name: document.getElementById("contacts__name").value,
+          contacts__email: document.getElementById("contacts__email").value,
+          contacts__phone: document.getElementById("contacts__phone").value,
+          contacts__message: document.getElementById("contacts__message").value
+      }
+      emailjs.send('service_rjl8246', 'template_mmgg66s', parameters)
+          .then(function(response) {
+              alert('Дякую! Ваше повідомлення відправлено!');
+          }, function(error) {
+            alert('Щось пішло не так...');
+          });
+  });
+}
+// Submitting a form end

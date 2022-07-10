@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Дмитро Лазорів | Junior Front-end Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
@@ -239,7 +239,7 @@
                             </div>
                             <img class="portfolio__img" src="Images/portfolio-photo-agami.jpg">
                             <figcaption class="portfolio__content">
-                                <h3 class="visually-hidden">Showcase</h3>
+                                <h3 class="visually-hidden">Стоматологія АГАМІ - провідна клініка Москви</h3>
                             </figcaption>
                         </figure>
                         <figure class="portfolio__figure">
@@ -311,11 +311,11 @@
                     <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть загальне повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами якомога швидше.</p>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
                 </div>
-                <form class="contacts__form" action="mailto:dmytrolazoriv@outlook.com" method="post" enctype="text/plain">
-                    <input class="contacts__form-input"type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua">
-                    <input class="contacts__form-input" type="email" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua">
-                    <input class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" lang="ua">
-                    <textarea class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" lang="ua"></textarea>
+                  <form id="contacts__form" class="contacts__form" action="" method="" enctype="">
+                    <input id="contacts__name" class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua" required>
+                    <input id="contacts__email" class="contacts__form-input" type="email" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua" required>
+                    <input id="contacts__phone" class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" lang="ua">
+                    <textarea id="contacts__message" class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" lang="ua"></textarea required>
                     <button class="contacts__form-button" type="submit" lang="ua">ВІДПРАВИТИ</button>
                   </form>
             </div>
@@ -373,8 +373,15 @@
         </footer> <!-- footer -->
     </main> <!-- main -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="jquery.form.js"></script> -->
     <script src="js.cookie.js" charset="utf-8" type="text/javascript"></script>
 	<script src="jquery-lang.js" charset="utf-8" type="text/javascript"></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init('znFcw9hJrkZa2nhWl');
+    })();
+</script>
 </body>
 </html>
