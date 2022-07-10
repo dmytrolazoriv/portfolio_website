@@ -750,6 +750,7 @@ input[type="radio"].visually-hidden {
 .portfolio__in-detail-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     row-gap: 20px;
 
@@ -757,10 +758,11 @@ input[type="radio"].visually-hidden {
     top: 50%;
     left: 50%;
 
+    height: 100%;
     width: 100%;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 
     transform: translateX(-50%) translateY(-50%);
 
@@ -769,6 +771,8 @@ input[type="radio"].visually-hidden {
 
 .portfolio__in-detail-wrapper_hover {
     opacity: 1;
+
+    transition: all 0.5s ease-out;
 }
 
 .portfolio__in-detail-title {
@@ -814,6 +818,11 @@ input[type="radio"].visually-hidden {
 
     border-left: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
+}
+
+.portfolio__in-detail-link:hover {
+    color: #000000;
+    background-color: #fffbfb;
 }
 
 .portfolio__img {
