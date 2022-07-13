@@ -2,7 +2,9 @@ $(document).ready(function() {
   $('.header__menu-button').click(function() {
       $('.menu').toggleClass('menu_open', 500);
       $(this).toggleClass('header_open');
-      $('.header__menu-button-wrapper').toggleClass('header__menu-button-wrapper_open');
+      $('.header__menu-button-wrapper').toggleClass;
+      $('.header__menu-button-wrapper_open');
+      $('.header__social-menu').css('margin-bottom', '120px');
       $('.header__top').toggleClass('header__top_open');
     });
 });
@@ -130,32 +132,84 @@ if ($('#language-selected').is(':empty')){
   });
 // menu end
 
+$(document).ready(function() {
+    $.validator.addMethod( "lettersonly", function(value, element) {
+      return this.optional(element) || /^[a-z]+$/i.test(value);
+    }, "Letters only please." );
 
-// form start
-// $(document).ready(function() { 
-//   // bind 'myForm' and provide a simple callback function 
-//   $('.contacts__form').ajaxForm(function() { 
-//       alert("Thank you for your comment!"); 
-//   }); 
-// });
-// form end
+    $.validator.addMethod("phoneUA", function( phone_number, element ) {
+    phone_number = phone_number.replace(/\s+/g, "");
+    return this.optional(element ) || phone_number.length > 9 &&
+      phone_number.match(/^\+?3?8?(0[\s\.-]\d{2}[\s\.-]\d{3}[\s\.-]\d{2}[\s\.-]\d{2})$/);
+    }, "Please specify a valid phone number.");
 
-// Submitting a form start
-window.onload = function() {
-  document.getElementById('contacts__form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const parameters = {
-          contacts__name: document.getElementById("contacts__name").value,
-          contacts__email: document.getElementById("contacts__email").value,
-          contacts__phone: document.getElementById("contacts__phone").value,
-          contacts__message: document.getElementById("contacts__message").value
+    $("#contacts__form").validate({
+      rules: {
+          contacts__name: {
+            required: true,
+            lettersonly: true,
+            minlength: 10
+          },
+          contacts__email: {
+            required: true,
+            email: true
+          },
+          contacts__phone: {
+            required: true,
+            phoneUA: true
+          },
+          contacts__message: {
+            required: true,
+            minlength: 20
+          }
+      },
+      messages: {
+          contacts__name: {
+            required: "Будь ласка, введіть ваше ім'я та прізвище.",
+            lettersonly: "Ім'я та прізвище має містити тільки букви",
+            minlength: "Ваше ім'я та прізвище має складатися щонайменше з 10 символів."
+          },
+          contacts__email: {
+            required: "Будь ласка, введіть адресу електронної пошти.",
+            email: "Будь ласка, введіть дійсну адресу електронної пошти.",
+          },
+          contacts__phone: {
+            required: "Будь ласка, вкажіть номер телефону.",
+            phoneUA: "Введіть номер телефону у форматі: +380-XX-XXX-XX-XX."
+          },
+          contacts__message: {
+            required: "Будь ласка, залиште своє повідомлення.",
+            minlength: "Ваше повідомлення має містити принаймні 10 символів."
+          }
       }
-      emailjs.send('service_rjl8246', 'template_mmgg66s', parameters)
-          .then(function(response) {
-              alert('Дякую! Ваше повідомлення відправлено!');
-          }, function(error) {
-            alert('Щось пішло не так...');
-          });
+    });
+});
+
+// == NEW FORM FOR VALIDATION START ==
+$('#contacts__form').on('submit', function(event) {
+  event.preventDefault(); // prevent reload
+  if ($('#contacts__form').valid()) {
+      var formData = new FormData(this);
+      formData.append('service_id', 'service_rjl8246');
+      formData.append('template_id', 'template_mmgg66s');
+      formData.append('user_id', 'znFcw9hJrkZa2nhWl');
+      // formData.append('parameters', parameters);
+
+      $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+          type: 'POST',
+          data: formData,
+          contentType: false, // auto-detection
+          processData: false // no need to parse formData to string
+      }).done(function() {
+          $("#contacts__form").validate().resetForm();
+          var successPara = $('.successSent');
+          var para = $('.contacts__contacts-para');
+          para.html('Повідомлення відправлено. Дякую!'
+          + '<br>' + 'Я зв\'яжусь з вами найближчим часом.');
+      }).fail(function(error) {
+          alert('Щось пішло не так... ' + JSON.stringify(error));
+      });
+  }
+
   });
-}
-// Submitting a form end
+// == NEW FORM FOR VALIDATION END ==
