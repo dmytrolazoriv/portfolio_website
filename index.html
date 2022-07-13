@@ -311,13 +311,14 @@
                     <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть загальне повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами якомога швидше.</p>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
                 </div>
-                  <form id="contacts__form" class="contacts__form" action="" method="" enctype="">
-                    <input id="contacts__name" class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" lang="ua" required>
-                    <input id="contacts__email" class="contacts__form-input" type="email" placeholder="ВВЕДІТЬ ВАШ EMAIL*" lang="ua" required>
-                    <input id="contacts__phone" class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" lang="ua">
-                    <textarea id="contacts__message" class="contacts__form-textarea" name="" id="" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" lang="ua"></textarea required>
+                <p class="contacts__contacts-para contacts__contacts-para_success"></p>
+                <form id="contacts__form" class="contacts__form" action="" method="" enctype="">
+                    <input id="contacts__name" class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*" name="contacts__name" lang="ua">
+                    <input id="contacts__email" class="contacts__form-input" type="email" placeholder="ВВЕДІТЬ ВАШ EMAIL*" name="contacts__email" lang="ua">
+                    <input id="contacts__phone" class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*" name="contacts__phone" lang="ua">
+                    <textarea id="contacts__message" class="contacts__form-textarea" placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" name="contacts__message" lang="ua"></textarea>
                     <button class="contacts__form-button" type="submit" lang="ua">ВІДПРАВИТИ</button>
-                  </form>
+                </form>
             </div>
         </section> <!-- contacts -->
         <footer class="footer">
@@ -377,11 +378,14 @@
     <script src="js.cookie.js" charset="utf-8" type="text/javascript"></script>
 	<script src="jquery-lang.js" charset="utf-8" type="text/javascript"></script>
     <script src="script.js"></script>
+    <script src="jquery.mockjax.js"></script>
+    <script src="jquery.form.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script type="text/javascript">
-    (function() {
-        emailjs.init('znFcw9hJrkZa2nhWl');
-    })();
+    // (function() {
+    //     emailjs.init('znFcw9hJrkZa2nhWl');
+    // })();
 </script>
 </body>
 </html>
