@@ -965,6 +965,46 @@ input[type="radio"].visually-hidden {
     border-right: 3px solid #000000;
 }
 
+.contacts__contacts-para {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+
+    color: #198754;
+
+    margin: 0;
+    margin: 0 0 60px 0;
+}
+
+/* Styling the Form for Validation start */
+form.contacts__form label.error,
+label.error {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #dc3545;
+    font-style: italic;
+}
+
+input:focus {
+    border: 0;
+    background-color: transparent;
+    border-left: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+input.error,
+textarea.error {
+    border: 0;
+    background-color: transparent;
+    border-left: 5px solid #dc3545;
+    border-bottom: 5px solid #dc3545;
+}
+
+/* Styling the Form for Validation end */
+
 /* ===== Contacts styles ===== */
 
 /* ===== Footer styles start ===== */
@@ -1189,7 +1229,7 @@ input[type="radio"].visually-hidden {
 /* ===== Adaptive 1024px styles start ===== */
 @media (max-width: 1023.98px) {
     .header {
-        background-position: 180px 161px, 90px 0;
+        background-position: 170px 80px, 110px 0;
     }
 
     .container {
@@ -1198,7 +1238,7 @@ input[type="radio"].visually-hidden {
     }
 
     .header__top {
-        padding: 60px 0 240px;
+        padding: 60px 0 100px;
     }
 
     .menu__item {
@@ -1335,7 +1375,7 @@ input[type="radio"].visually-hidden {
 /* ===== Adaptive 768px styles start ===== */
 @media (max-width: 768px) {
     .header {
-        background-position: 130px 171px, 120px 0;
+        background-position: 130px 230px, 120px 0;
     }
 
     .header__title {
@@ -1533,7 +1573,7 @@ input[type="radio"].visually-hidden {
 
     
     .header__top {
-        padding: 40px 0 100px;
+        padding: 40px 0 80px;
         margin: 0 -10px;
     }
 
