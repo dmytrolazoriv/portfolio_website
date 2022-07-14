@@ -134,7 +134,7 @@ if ($('#language-selected').is(':empty')){
 
 $(document).ready(function() {
     $.validator.addMethod( "lettersonly", function(value, element) {
-      return this.optional(element) || /^[a-z]+$/i.test(value);
+      return this.optional(element) || /[А-Я][а-яєі]+/g.test(value);
     }, "Letters only please." );
 
     $.validator.addMethod("phoneUA", function( phone_number, element ) {
@@ -202,10 +202,16 @@ $('#contacts__form').on('submit', function(event) {
           processData: false // no need to parse formData to string
       }).done(function() {
           $("#contacts__form").validate().resetForm();
-          var successPara = $('.successSent');
-          var para = $('.contacts__contacts-para');
-          para.html('Повідомлення відправлено. Дякую!'
-          + '<br>' + 'Я зв\'яжусь з вами найближчим часом.');
+          $('.modal__forms').addClass('show__forms fade__forms');
+          $('.modal__backdrop').addClass('show__backdrop');
+          $('.modal__btn-close').on('click', function(e) {
+              e.preventDefault();
+              $('.modal__forms').removeClass('show__forms fade__forms');
+              $('.modal__backdrop').removeClass('show__backdrop fade__backdrop');
+            });
+          // var para = $('.contacts__contacts-para');
+          // para.html('Повідомлення відправлено. Дякую!'
+          // + '<br>' + 'Я зв\'яжусь з вами найближчим часом.');
       }).fail(function(error) {
           alert('Щось пішло не так... ' + JSON.stringify(error));
       });
