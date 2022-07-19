@@ -77,14 +77,37 @@ lang.init({
   defaultLang: 'ua'
 });
 
+// try to change the value of lang attribute
+// $(document).ready(function() {
+//   if ($('html').attr('lang' === defaultLang)) {
+//      $('html').attr('lang', 'en');
+//    } else {
+//      $('html').attr('lang', defaultLang);
+//    }
+//  });
 
-$(document).ready(function() {
-  if ($('html').attr('lang' === defaultLang)) {
-     $('html').attr('lang', 'en');
-   } else {
-     $('html').attr('lang', defaultLang);
-   }
+ $(document).ready(function() {
+  $('.lang-en').click(function() {
+    $('html').attr('lang', 'en');
+  });
+  $('.lang-ua').click(function() {
+    $('html').attr('lang', 'ua');
+  });
  });
+
+
+//  const [html] = document.getElementsByTagName("html")
+//  const language = html.getAttribute("lang");
+// if (language === 'en') {
+//   html.setAttribute("lang", "ua");
+// } else {
+//   html.setAttribute("lang", "en");
+// }
+
+//  var changeLang = function changeLang(languageCode) {
+//   document.documentElement.setAttribute("lang", languageCode);
+// };
+// try to change the value of lang attribute
 
 
 // menu start
@@ -166,7 +189,7 @@ $(document).ready(function() {
       messages: {
           contacts__name: {
             required: "Будь ласка, введіть ваше ім'я та прізвище.",
-            lettersonly: "Ім'я та прізвище має містити тільки букви",
+            lettersonly: "Ім'я та прізвище має містити тільки букви.",
             minlength: "Ваше ім'я та прізвище має складатися щонайменше з 10 символів."
           },
           contacts__email: {
@@ -216,6 +239,9 @@ $('#contacts__form').on('submit', function(event) {
           alert('Щось пішло не так... ' + JSON.stringify(error));
       });
   }
-
   });
+
+  // $(document).ready(function() {
+  //     $('#contacts__name-error').attr("lang", "ua");
+  // });
 // == NEW FORM FOR VALIDATION END ==
