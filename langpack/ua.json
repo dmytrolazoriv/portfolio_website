@@ -41,7 +41,10 @@
      "Beta": "Бета",
      "Project": "Проект",
      "In the implementation stage.": "Знаходиться на стадії виконання.",
-     "DEMO": "ДЕМО" 
+     "DEMO": "ДЕМО",
+     "The message has been sent. Thank you!": "Повідомлення відправлено. Дякую!",
+     "I will contact you shortly.": "Я зв'яжусь з вами найближчим часом.",
+     "Back to the main page": "Повернутися до головної сторінки"
 	},
 	"regex": [
 		[
