@@ -635,7 +635,7 @@ ul.menu-dropdown li:hover {
     width: 81px;
     height: 64px;
 
-    background-image: url("../Images/decorative-element-3.png");
+    background-image: url("../Images/decorative-element-4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2412,7 +2412,7 @@ textarea.error {
 /* ===== Adaptive 375px styles end ===== */
 
 /* ===== Adaptive 320px styles start ===== */
-@media (max-width: 319.98px) {
+@media (max-width: 320px) {
     .header {
         background-position: -270px 0px;
     }
@@ -2493,6 +2493,10 @@ textarea.error {
 
     .portfolio__in-detail-wrapper {
         row-gap: 16px;
+    }
+
+    .portfolio__in-detail-wrapper {
+        padding: 10px;
     }
 
     .main__text_pseudo::after {
