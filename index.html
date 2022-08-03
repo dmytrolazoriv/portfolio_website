@@ -112,9 +112,9 @@
         <div class="header__description">
             <h3 class="header__description-title" lang="ua">ПРО МЕНЕ</h3>
             <p class="header__description-text" lang="ua" data-lang-token="aboutMe">Мене звуть Дмитро, і я люблю
-                створювати речі, які живуть в Інтернеті. Я захоплений тим, щоб втілити в життя як технічні, так і
+                створювати речі, які живуть в Інтернеті. Я захоплений тим, щоб втілювати в життя як технічні, так і
                 візуальні аспекти цифрових продуктів. <br> Для мене важливий досвід користувача, красиві пікселі та
-                написання чистого, доступного людського коду. Я приділяю увагу деталям, тому що це створює досконалість.
+                написання чистого, доступного коду. Я приділяю увагу деталям, тому що це створює досконалість.
             </p>
             <a href="#contact__me" class="header__description-button" type="button" lang="ua">Почніть розмову</a>
         </div>
@@ -138,14 +138,15 @@
                             <h4 class="about__proficiency-title">Responsive web design</h4>
                             <!-- Псевдоэлемент для заголовка -->
                             <p class="about__proficiency-text" lang="ua" data-lang-token="web">Я створюю веб-сторінки,
-                                які добре виглядатають на всіх пристроях! Ваш сайт буде добре виглядати на всіх
-                                пристроях (настільних ПК, планшетах і телефонах).</p>
+                                які добре виглядатають на всіх пристроях. Ваш сайт буде добре виглядати на на всіх типах
+                                пристроїв (настільних ПК, планшетах і телефонах).</p>
                         </li>
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">Web development</h4>
                             <!-- Псевдоэлемент для заголовка -->
                             <p class="about__proficiency-text" lang="ua" data-lang-token="dev">Займаюсь розробкою
-                                веб-сайтів від простої однієї статичної до в міру складних багатосторінкових сайтів.</p>
+                                веб-сайтів від простих односторінкових лендінгів до для складних багатосторінкових
+                                корпоративних сайтів.</p>
                         </li>
                         <li class="about__proficiency-item">
                             <h4 class="about__proficiency-title">CMS WEBSITES</h4>
@@ -158,8 +159,9 @@
                             <h4 class="about__proficiency-title">MAINTENANCE</h4>
                             <!-- Псевдоэлемент для заголовка -->
                             <p class="about__proficiency-text" lang="ua" data-lang-token="maintenance">Займаюсь
-                                обслуговування веб-сайту та завдань які стосується підтримки належного та актуального
-                                функціонування вашого веб-сайту.</p>
+                                обслуговуванням веб-сайту та завданнями, які стосуються його підтримки, належного та
+                                актуального
+                                функціонування і вигляду.</p>
                         </li>
                     </ul>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
@@ -290,11 +292,14 @@
                     </figure>
                     <figure class="portfolio__figure">
                         <div class="portfolio__in-detail-wrapper">
-                            <h3 class="portfolio__in-detail-title"><span lang="ua">Проект</span>&nbsp;№3</h3>
-                            <p class="portfolio__in-detail-descr" lang="ua">Знаходиться на стадії виконання.</p>
-                            <a class="portfolio__in-detail-link" href="#!" lang="ua">ДЕМО</a>
+                            <h3 class="portfolio__in-detail-title"><span lang="ua">DJI</h3>
+                            <p class="portfolio__in-detail-descr" lang="ua">Mavic 2 Pro</p>
+                            <p class="portfolio__in-detail-used"><span lang="ua">Використовував:&nbsp;</span>HTML, SCSS,
+                                JS, JQuery, Gulp</p>
+                            <a class="portfolio__in-detail-link" href="https://dmytrolazoriv.github.io/dji_mavic/"
+                                lang="ua" target="_blank">Переглянути проект</a>
                         </div>
-                        <img class="portfolio__img" src="Images/placeholder_3.jpg">
+                        <img class="portfolio__img" src="Images/portfolio-photo-dji-mavic.jpg">
                         <figcaption class="portfolio__content">
                             <h3 class="visually-hidden">Showcase</h3>
                         </figcaption>
@@ -343,7 +348,7 @@
             <div class="container">
                 <div class="contacts__top-part-wrapper">
                     <h2 class="main__title contacts__title" lang="ua">КОНТАКТИ</h2>
-                    <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть загальне
+                    <p class="main__text main__text_pseudo" data-lang-token="message" lang="ua">Надішліть своє
                         повідомлення або подробиці проекту, у якому ви б хотіли, щоб я брав участь, і я зв’яжуся з вами
                         якомога швидше.</p>
                     <img class="main__img-dec" src="Images/decorative-element.svg" alt="">
@@ -352,12 +357,12 @@
                 <form id="contacts__form" class="contacts__form" action="" method="" enctype="">
                     <input id="contacts__name" class="contacts__form-input" type="text" placeholder="ПРІЗВИЩЕ ТА ІМ’Я*"
                         name="contacts__name" lang="ua">
-                    <input id="contacts__email" class="contacts__form-input" type="email"
-                        placeholder="ВВЕДІТЬ ВАШ EMAIL*" name="contacts__email" lang="ua">
+                    <input id="contacts__email" class="contacts__form-input" type="email" placeholder="EMAIL*"
+                        name="contacts__email" lang="ua">
                     <input id="contacts__phone" class="contacts__form-input" type="tel" placeholder="ТЕЛЕФОН*"
                         name="contacts__phone" lang="ua">
-                    <textarea id="contacts__message" class="contacts__form-textarea"
-                        placeholder="ВВЕДІТЬ ТЕКСТ ЗВЕРНЕННЯ*" name="contacts__message" lang="ua"></textarea>
+                    <textarea id="contacts__message" class="contacts__form-textarea" placeholder="ТЕКСТ ЗВЕРНЕННЯ*"
+                        name="contacts__message" lang="ua"></textarea>
                     <button class="contacts__form-button" type="submit" lang="ua">ВІДПРАВИТИ</button>
                 </form>
                 <!-- Modal start -->
@@ -450,8 +455,8 @@
                     </ul>
                     <p class="footer__copyright-text">
                         <span class="footer__copyright-text_bold">&copy;&nbsp;2022</span><span
-                            class="footer__copyright-text_bold" lang="ua"> Дмитро Лазорів</span> <span lang="ua">Всі
-                            права захищені.</span>
+                            class="footer__copyright-text_bold" lang="ua"> Дмитро Лазорів</span> <span lang="ua">
+                            Всі права захищені.</span>
                     </p>
                 </div> <!-- footer__inner -->
             </div> <!-- container -->
