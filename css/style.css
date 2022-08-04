@@ -563,7 +563,7 @@ ul.menu-dropdown li:hover {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 40px;
-    column-gap: 60px;
+    column-gap: 80px;
 
     margin-bottom: 100px;
 }
@@ -1520,8 +1520,7 @@ textarea.error {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        /* width: fit-content; */
-        width: 100%;
+        width: fit-content;
     }
 
     .main__title {
@@ -1583,8 +1582,6 @@ textarea.error {
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 60%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        width: fit-content;
     }
 
     .skills__title {
