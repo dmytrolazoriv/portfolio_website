@@ -70,14 +70,25 @@ $(document).ready(function () {
 });
 
 // Loading Language Packs
-var lang = new Lang();
+var langObj = new Lang();
 
-lang.dynamic('en', 'langpack/en.json');
-lang.dynamic('ua', 'langpack/ua.json');
+langObj.dynamic('en', 'langpack/en.json');
+langObj.dynamic('ua', 'langpack/ua.json');
 
-lang.init({
+langObj.init({
   defaultLang: 'ua'
 });
+
+$('.lang-en').click(function () {
+  console.log(window.langObj);
+  window.langObj.change('en');
+});
+
+$('.lang-ua').click(function () {
+  console.log(window.langObj);
+  window.langObj.change('ua');
+});
+
 // Loading Language Packs
 
 // try to change the value of lang attribute
