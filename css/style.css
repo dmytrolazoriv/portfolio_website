@@ -427,12 +427,20 @@ ul.menu-dropdown li:hover {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 
-    width: fit-content;
+    width: 90%;
 
     color: #ffffff;
 
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+}
+
+.header__description-text p {
+    margin: 0 0 10px 0;
+}
+
+.header__description-text p:last-child {
+    margin-bottom: 0;
 }
 
 .header__description-button {
@@ -670,7 +678,7 @@ ul.menu-dropdown li:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     /* font-size: 14px;
     line-height: 19px; */
 
