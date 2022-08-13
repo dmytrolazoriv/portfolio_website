@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
     background-color: #000000; */
 
     background-image: url("../Images/I.png"), url("../Images/shape.svg");
-    background-position: 600px 162px, 540px 0;
+    background-position: 480px 100px, 540px 0;
     background-repeat: no-repeat, no-repeat;
     background-size: 960px, cover;
     /* z-index: -1; */
@@ -1443,7 +1443,7 @@ textarea.error {
 /* ===== Adaptive 1440px styles start ===== */
 @media (max-width: 1439.98px) {
     .header {
-        background-position: 560px 122px, 360px 0;
+        background-position: 440px 100px, 360px 0;
     }
 
     .portfolio__button {
@@ -1456,7 +1456,7 @@ textarea.error {
 /* ===== Adaptive 1200px styles start ===== */
 @media (max-width: 1199.98px) {
     .header {
-        background-position: 380px 100px, 280px 0;
+        background-position: 240px 100px, 280px 0;
     }
 
     .header__content {
@@ -1490,7 +1490,7 @@ textarea.error {
 /* ===== Adaptive 1024px styles start ===== */
 @media (max-width: 1023.98px) {
     .header {
-        background-position: 170px 80px, 110px 0;
+        background-position: 70px 80px, 110px 0;
     }
 
     .container {
@@ -1575,7 +1575,7 @@ textarea.error {
 /* ===== Adaptive 992px styles start ===== */
 @media (max-width: 991.98px) {
     .header {
-        background-position: 240px 121px, 70px 0;
+        background-position: 39px 80px, 70px 0;
     }
 
     .main__title {
@@ -1626,7 +1626,7 @@ textarea.error {
 /* ===== Adaptive 920px styles start ===== */
 @media (max-width: 920px) {
     .header {
-        background-position: 150px 121px, 130px -60px;
+        background-position: -30px 110px, 130px -60px;
     }
 }
 
@@ -1663,7 +1663,7 @@ textarea.error {
 /* ===== Adaptive 768px styles start ===== */
 @media (max-width: 768px) {
     .header {
-        background-position: 130px 130px, 120px 0;
+        background-position: -100px 140px, 120px 0;
     }
 
     .header__title {
@@ -1741,7 +1741,7 @@ textarea.error {
     .header {
         min-height: 100vh;
         background: url("../Images/I.png"), #050505;
-        background-position: -80px -10px;
+        background-position: -310px -10px;
         background-repeat: no-repeat;
         background-size: 1030px;
     }
@@ -2420,6 +2420,10 @@ textarea.error {
 @media (max-width: 320px) {
     .header {
         background-position: -270px 0px;
+    }
+
+    .header__header-open_mob {
+        background-position: -220px 40px;
     }
 
     .header__description {
