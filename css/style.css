@@ -1441,7 +1441,7 @@ textarea.error {
 
 
 /* ===== Adaptive 1440px styles start ===== */
-@media (max-width: 1439.98px) {
+@media (max-width: 1440px) {
     .header {
         background-position: 440px 100px, 360px 0;
     }
@@ -1454,7 +1454,7 @@ textarea.error {
 /* ===== Adaptive 1024px styles end ===== */
 
 /* ===== Adaptive 1200px styles start ===== */
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
     .header {
         background-position: 240px 100px, 280px 0;
     }
@@ -1488,7 +1488,7 @@ textarea.error {
 /* ===== Adaptive 1200px styles end ===== */
 
 /* ===== Adaptive 1024px styles start ===== */
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
     .header {
         background-position: 70px 80px, 110px 0;
     }
@@ -1573,7 +1573,7 @@ textarea.error {
 
 
 /* ===== Adaptive 992px styles start ===== */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .header {
         background-position: 39px 80px, 70px 0;
     }
@@ -1737,7 +1737,7 @@ textarea.error {
 /* ===== Adaptive 730px styles end ===== */
 
 /* ===== Adaptive 576px styles start ===== */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     .header {
         min-height: 100vh;
         background: url("../Images/I.png"), #050505;
@@ -2069,7 +2069,7 @@ textarea.error {
 /* ===== Adaptive 576px styles end ===== */
 
 /* ===== Adaptive 425px styles start ===== */
-@media (max-width: 424.98px) {
+@media (max-width: 425px) {
     .header {
         min-height: 100vh;
         background: url("../Images/I_transparent.png"), #050505;
