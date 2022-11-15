@@ -303,3 +303,11 @@ $(window).on("load", function () {
 //   console.log(event.type);
 // });
 // == Adding lang attributes for label tags during form validation ==
+
+// phone mask
+var element = document.getElementById('contacts__phone');
+var maskOptions = {
+  mask: '+{380}-00-000-00-00'
+};
+var mask = IMask(element, maskOptions);
+// phone mask

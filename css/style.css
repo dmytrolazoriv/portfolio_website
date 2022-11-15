@@ -444,15 +444,28 @@ ul.menu-dropdown li:hover {
 }
 
 .header__description-button {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    font-weight: bold;
+
     padding: 10px 22px;
 
     color: #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
+    /* border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff; */
+    border: 2px solid #ffffff;
 
     text-transform: uppercase;
 
     display: inline-block;
+
+    transition: 0.3s ease-out;
 }
 
 .header__description-button:hover {
@@ -880,6 +893,8 @@ ul.menu-dropdown li:hover {
     color: #ffffff;
 
     margin: 0;
+
+    max-width: 600px;
 }
 
 .portfolio__in-detail-used {
@@ -901,13 +916,14 @@ ul.menu-dropdown li:hover {
 
     padding: 10px 36px;
 
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
+    border: 2px solid #ffffff;
+
+    transition: 0.3s ease-out;
 }
 
 .portfolio__in-detail-link:hover {
     color: #000000;
-    background-color: #fffbfb;
+    background-color: #ffffff;
 }
 
 .portfolio__img {
@@ -1052,8 +1068,9 @@ ul.menu-dropdown li:hover {
     color: #000000;
     padding: 16px 60px;
 
-    border-left: 3px solid #000000;
-    border-right: 3px solid #000000;
+    border: 2px solid #000000;
+
+    transition: 0.3s ease-out;
 }
 
 .contacts__form-button:hover {
