@@ -311,3 +311,52 @@ var maskOptions = {
 };
 var mask = IMask(element, maskOptions);
 // phone mask
+
+// fullPage Initialization
+new fullpage('#fullpage', {
+  autoScrolling: true,
+  scrollHorizontally: true,
+  sectionSelector: '.section',
+  scrollOverflow: true,
+  menu: '#header__menu',
+  anchors: ['top', 'about__me', 'skills', 'portfolio', 'contact__me'],
+  afterLoad: function () {
+    if ($('body').attr('class').match(/fp-viewing-about__me|fp-viewing-skills|fp-viewing-portfolio|fp-viewing-contact__me/)) {
+      $('.menu').addClass('active');
+      $('.social-links').addClass('active');
+      $('ul.menu-dropdown li').addClass('inversion');
+    }
+    else {
+      $('.menu').removeClass('active');
+      $('ul.menu-dropdown li').removeClass('inversion');
+    }
+  }
+});
+// fullPage Initialization
+
+// Fixed header when scrolling
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 800) {
+    $('.menu').addClass('active');
+  }
+  else {
+    $('.menu').removeClass('active');
+    $('.social-links').removeClass('active');
+  }
+});
+// Fixed header when scrolling
+
+// Filtration start
+$('.portfolio__button').click(function (event) {
+  var i = $(this).data('filter');
+
+  if (i == 1) {
+    $('.portfolio__figure').show();
+  } else {
+    $('.portfolio__figure').hide();
+    $('.portfolio__figure.f_' + i).show();
+  }
+
+  return false;
+});
+// Filtration end
