@@ -347,7 +347,7 @@ $(window).scroll(function () {
 // Fixed header when scrolling
 
 // Filtration start
-$('.portfolio__button').click(function (event) {
+$('.filter__item').click(function (event) {
   var i = $(this).data('filter');
 
   if (i == 1) {
@@ -356,6 +356,9 @@ $('.portfolio__button').click(function (event) {
     $('.portfolio__figure').hide();
     $('.portfolio__figure.f_' + i).show();
   }
+
+  $('.filter__item').removeClass('active');
+  $(this).addClass('active');
 
   return false;
 });
