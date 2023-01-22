@@ -383,7 +383,7 @@ ul.menu-dropdown li.inversion:hover {
     background-position: top right;
     background-repeat: no-repeat;
     /* background-size: 960px, cover; */
-    background-size: unset;
+    background-size: contain;
 }
 
 .header__content {
@@ -1772,6 +1772,43 @@ textarea.error {
         align-items: flex-start;
     }
 
+    .header__top-text {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .header__title {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .header__bott-text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .header__social-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__social-img {
+        padding: 4px;
+    }
+
+    .header__description-title {
+        font-size: 20px;
+        line-height: 30px;
+
+        margin-bottom: 20px;
+    }
+
+    .about__top-part-wrapper {
+        margin: 165px 0 100px 0;
+    }
+
     /* .menu__item .menu__link:not(.menu__item:last-child .menu__link),
     .social-links,
     ul.menu-dropdown li {
@@ -1786,10 +1823,6 @@ textarea.error {
         /* background-position: -100px 140px, 120px 0; */
     }
 
-    .header__title {
-        width: fit-content;
-    }
-
     .menu__item {
         margin-right: 44px;
     }
@@ -1799,9 +1832,52 @@ textarea.error {
     } */
 
     .main__title {
-        width: 65%;
+        width: 60%;
 
         margin: 80px auto 80px auto;
+    }
+
+    .skills__h2-title,
+    .contacts__title {
+        margin: 245px auto 80px auto;
+    }
+
+    .skills__title {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .skills__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .filter__item {
+        width: 15%;
+    }
+
+    .portfolio__in-detail-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .portfolio__in-detail-descr {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .portfolio__in-detail-used {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .portfolio__in-detail-link {
+        padding: 10px 20px;
+    }
+
+    .portfolio__in-detail-wrapper {
+        row-gap: 20px;
+        padding: 10px;
     }
 
     /* .menu__item:first-child .menu__link,
