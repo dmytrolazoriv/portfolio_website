@@ -1934,9 +1934,9 @@ textarea.error {
     .top {
         min-height: 100vh;
         background: url("../Images/I.png"), #050505;
-        /* background-position: -310px -10px; */
+        background-position: top right;
         background-repeat: no-repeat;
-        background-size: 1030px;
+        background-size: contain;
     }
 
     .header__header-open_mob {
@@ -2168,6 +2168,7 @@ textarea.error {
     .header__social-img {
         width: 100%;
         object-fit: contain;
+        padding: 0;
     }
 
     .header__description {

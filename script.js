@@ -8,6 +8,11 @@ $(document).ready(function () {
     $('.header__social-menu').toggleClass('header__social-menu_open-mob');
     $('.header__top').toggleClass('header__top_open');
   });
+  if ($(window).width() >= 577) {
+    $('.header__menu-button-wrapper').hide();
+  } else if ($(window).width() <= 576) {
+    $('.header__menu-button-wrapper').show();
+  }
 });
 
 // $('.portfolio__in-detail-wrapper').hover(function() {
