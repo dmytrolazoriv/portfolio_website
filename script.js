@@ -8,6 +8,10 @@ $(document).ready(function () {
     $('.header__social-menu').toggleClass('header__social-menu_open-mob');
     $('.header__top').toggleClass('header__top_open');
   });
+  
+});
+
+$(window).on("resize", function () {
   if ($(window).width() >= 577) {
     $('.header__menu-button-wrapper').hide();
   } else if ($(window).width() <= 576) {

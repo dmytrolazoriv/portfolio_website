@@ -1943,6 +1943,14 @@ textarea.error {
         background-position: -220px 40px;
     }
 
+    .menu__main-list .menu__item:nth-child(3) .menu__link {
+        color: #ffffff;
+    }
+
+    .menu_open {
+        background-color: rgba(11, 11, 11, 0.75);
+    }
+
     .header__title {
         margin-bottom: 50px;
     }
@@ -2242,8 +2250,13 @@ textarea.error {
     }
 
     .portfolio__title-wrapper {
-        padding: 50px 0;
-        background-position: -630px 0px;
+        padding: 70px 0 70px 0;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .main__title_no-margins {
+        margin: 0 auto;
     }
 
     .portfolio__button {
@@ -2259,6 +2272,51 @@ textarea.error {
     .contacts__form-textarea {
         width: 70%;
     }
+
+    .about__top-part-wrapper,
+    .contacts__top-part-wrapper {
+        margin: 0 0 100px 0;
+    }
+
+    .skills__list {
+        margin: 0 0 100px 0;
+    }
+
+    .portfolio__title-wrapper {
+        margin-top: 0;
+    }
+
+    .filter__item {
+        width: 20%;
+    }
+
+    .portfolio__in-detail-title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .portfolio__in-detail-descr {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .portfolio__in-detail-used {
+        text-align: center;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .portfolio__in-detail-link {
+        font-size: 9px;
+        line-height: 13px;
+        padding: 8px 10px;
+    }
+
+    .portfolio__in-detail-wrapper {
+        row-gap: 12px;
+        padding: 10px;
+    }
+
 }
 
 /* ===== Adaptive 576px styles end ===== */
