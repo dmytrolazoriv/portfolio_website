@@ -2329,6 +2329,10 @@ textarea.error {
         padding: 10px;
     }
 
+    .portfolio__figure {
+        flex-basis: 100%;
+    }
+
 }
 
 /* ===== Adaptive 576px styles end ===== */
@@ -2338,9 +2342,9 @@ textarea.error {
     .top {
         min-height: 100vh;
         background: url("../Images/I_transparent.png"), #050505;
-        /* background-position: -200px 20px; */
+        background-position: bottom left;
         background-repeat: no-repeat;
-        background-size: 971px;
+        background-size: cover;
     }
 
     .header__header-open_mob {
@@ -2427,7 +2431,7 @@ textarea.error {
     }
 
     .about__proficiency-wrapper {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 
     .about__proficiency-item {
@@ -2478,14 +2482,12 @@ textarea.error {
     }
 
     .skills__title {
-        font-size: 24px;
-        line-height: 31px;
+        font-size: 22px;
+        line-height: 32px;
         text-align: center;
-
         width: 100%;
-
         margin: 0 auto;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .skills__list {
@@ -2493,7 +2495,7 @@ textarea.error {
     }
 
     .skills__list:last-child {
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
 
     .skills__item:nth-of-type(8) .skills__img {
@@ -2505,9 +2507,8 @@ textarea.error {
     }
 
     .skills__text {
-        font-size: calc(24px - 4px);
-        font-weight: 400;
-        line-height: calc(29px - 4px);
+        font-size: 18px;
+        line-height: 22px;
     }
 
     .portfolio__title-wrapper {
@@ -2553,6 +2554,17 @@ textarea.error {
     .footer__copyright-text {
         text-align: center;
     }
+
+    .filter__item {
+        width: 25%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .portfolio__footer-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 /* ===== Adaptive 425px styles end ===== */
@@ -2576,17 +2588,31 @@ textarea.error {
     }
 
     .menu__link {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
-        line-height: 15px;
+        line-height: 18px;
     }
 
     .main__title {
-        font-size: 14px;
-        line-height: 128%;
+        font-size: 18px;
+        line-height: 24px;
 
         padding: 20px 40px;
-        margin: 70px auto 50px auto;
+        margin: 50px auto 50px auto;
+    }
+
+    .main__text {
+        margin: 0 0 50px 0;
+    }
+
+    .about__proficiency-title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .about__proficiency-list {
+        margin-bottom: 50px;
     }
 
     .about__button {
@@ -2606,8 +2632,9 @@ textarea.error {
     }
 
     .skills__title {
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 auto 50px auto;
     }
 
     .about__title::after {
@@ -2619,9 +2646,9 @@ textarea.error {
         flex-basis: 80%;
     }
 
-    .skills__h2-title {
+    /* .skills__h2-title {
         margin-bottom: 70px;
-    }
+    } */
 
     .portfolio__controls {
         flex-wrap: wrap;
@@ -2669,13 +2696,22 @@ textarea.error {
 
     .contacts__form-input::placeholder,
     .contacts__form-textarea {
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .footer__copyright-text {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .footer__social-link svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .filter__item {
+        width: 28%;
     }
 }
 
@@ -2703,6 +2739,10 @@ textarea.error {
 
     .main__title {
         width: 95%;
+    }
+
+    .main__title_no-margins {
+        margin: 10px auto 10px auto;
     }
 
     .main__text {
@@ -2733,7 +2773,7 @@ textarea.error {
     .about__top-part-wrapper,
     .about__proficiency-wrapper,
     .contacts__top-part-wrapper {
-        margin-bottom: 150px;
+        margin-bottom: 80px;
     }
 
     .skills__item {
@@ -2743,6 +2783,11 @@ textarea.error {
     .skills__title {
         font-size: 18px;
         line-height: 25px;
+        margin: 0 auto 40px auto;
+    }
+
+    .skills__list {
+        row-gap: 40px;
     }
 
     .skills__item:nth-of-type(7) .skills__img {
