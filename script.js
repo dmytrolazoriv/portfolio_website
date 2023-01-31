@@ -12,9 +12,9 @@ $(document).ready(function () {
 });
 
 $(window).on("resize", function () {
-  if ($(window).width() >= 577) {
+  if ($(window).width() >= 769) {
     $('.header__menu-button-wrapper').hide();
-  } else if ($(window).width() <= 576) {
+  } else if ($(window).width() <= 768) {
     $('.header__menu-button-wrapper').show();
   }
 });

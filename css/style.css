@@ -1760,7 +1760,7 @@ textarea.error {
     }
 
     .menu__main-list .menu__item {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     /* .menu__item:first-child .menu__link,
@@ -1784,6 +1784,10 @@ textarea.error {
 @media (max-width: 768px) {
     .menu {
         align-items: flex-start;
+    }
+
+    .menu_open {
+        background-color: rgba(11, 11, 11, 0.75);
     }
 
     .header__top-text {
@@ -1820,7 +1824,7 @@ textarea.error {
     }
 
     .about__top-part-wrapper {
-        margin: 165px 0 100px 0;
+        margin: 0 0 100px 0;
     }
 
     /* .menu__item .menu__link:not(.menu__item:last-child .menu__link),
@@ -1847,13 +1851,19 @@ textarea.error {
 
     .main__title {
         width: 60%;
+    }
 
-        margin: 80px auto 80px auto;
+    .main__title_no-margins {
+        margin: 0;
     }
 
     .skills__h2-title,
     .contacts__title {
-        margin: 245px auto 80px auto;
+        margin: 100px auto 80px auto;
+    }
+
+    .skills__list {
+        margin: 0 0 100px 0;
     }
 
     .skills__title {
@@ -1894,6 +1904,14 @@ textarea.error {
         padding: 10px;
     }
 
+    .portfolio__title-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 100px 0 80px 0;
+    }
+
     /* .menu__item:first-child .menu__link,
     .menu__item:nth-of-type(2) .menu__link {
         color: #000000;
@@ -1931,6 +1949,10 @@ textarea.error {
     .contacts__form-input,
     .contacts__form-textarea {
         width: 55%;
+    }
+
+    .contacts__top-part-wrapper {
+        margin:0 0 100px 0;
     }
 
     /* hamburger  styles start */
@@ -2049,7 +2071,7 @@ textarea.error {
 
 
     .header__top {
-        padding: 40px 0 80px;
+        padding: 60px 0 80px;
         margin: 0 -10px;
     }
 
@@ -2104,6 +2126,16 @@ textarea.error {
 
 /* ===== Adaptive 730px styles end ===== */
 
+/* ===== Adaptive 610px styles start ===== */
+@media (max-width: 610px) {
+    .about__proficiency-item {
+        flex-basis: 80%;
+    
+        margin-bottom: 40px;
+    }
+}
+/* ===== Adaptive 610px styles end ===== */
+
 /* ===== Adaptive 576px styles start ===== */
 @media (max-width: 576px) {
     .top {
@@ -2120,10 +2152,6 @@ textarea.error {
 
     .menu__main-list .menu__item:nth-child(3) .menu__link {
         color: #ffffff;
-    }
-
-    .menu_open {
-        background-color: rgba(11, 11, 11, 0.75);
     }
 
     .header__title {
@@ -2337,6 +2365,16 @@ textarea.error {
 
 /* ===== Adaptive 576px styles end ===== */
 
+
+/* ===== Adaptive 450px styles start ===== */
+@media (max-width: 450px) {
+    .filter__item {
+        width: 25%;
+    }
+}
+/* ===== Adaptive 450px styles end ===== */
+
+
 /* ===== Adaptive 425px styles start ===== */
 @media (max-width: 425px) {
     .top {
@@ -2432,12 +2470,6 @@ textarea.error {
 
     .about__proficiency-wrapper {
         margin-bottom: 100px;
-    }
-
-    .about__proficiency-item {
-        flex-basis: 70%;
-
-        margin-bottom: 40px;
     }
 
     .about__proficiency-title {
