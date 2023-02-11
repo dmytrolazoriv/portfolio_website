@@ -47,14 +47,14 @@ a:active {
     box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.50);
 } */
 
-button:focus,
+/* button:focus,
 button:active {
     color: #ffffff;
     background-color: #000000;
     border-color: transparent;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.50);
-}
+} */
 
 ul {
     list-style: none;
@@ -336,7 +336,7 @@ ul.menu-dropdown li.inversion:hover {
     font-weight: 700;
     line-height: 21px;
 
-    /* color: #ffffff; */
+    color: #ffffff;
 }
 
 .menu__link:hover {
@@ -1572,15 +1572,19 @@ textarea.error {
 
 /* ===== Adaptive 1200px styles end ===== */
 
+/* ===== Adaptive 1100px styles start ===== */
+@media (max-width: 1100px) {
+    .menu__main-list {
+        justify-content: flex-end;
+        row-gap: 40px;
+    }
+}
+/* ===== Adaptive 1100px styles end ===== */
+
 /* ===== Adaptive 1024px styles start ===== */
 @media (max-width: 1024px) {
     .menu {
         align-items: flex-start;
-    }
-
-    .menu__main-list {
-        justify-content: flex-end;
-        row-gap: 40px;
     }
 
     .top {
@@ -2025,7 +2029,7 @@ textarea.error {
         width: 30px;
         height: 3px;
         vertical-align: bottom;
-        background: #fff;
+        background: #000;
         border-radius: 5px;
         /* transition: background .3s .5s; */
     }
@@ -2037,7 +2041,7 @@ textarea.error {
         left: 0;
         width: 100%;
         height: 3px;
-        background: #fff;
+        background: #000;
         transform-origin: 50% 50%;
         border-radius: 5px;
         /* transition: top .3s .3s,transform .3s; */
@@ -2135,6 +2139,7 @@ textarea.error {
     }
 }
 /* ===== Adaptive 610px styles end ===== */
+
 
 /* ===== Adaptive 576px styles start ===== */
 @media (max-width: 576px) {
@@ -2361,9 +2366,31 @@ textarea.error {
         flex-basis: 100%;
     }
 
+    .header__menu-button > span {
+        background: #ffffff;
+    }
+
+    .header__menu-button > span::before,
+     .header__menu-button > span::after {
+        background-color: #ffffff;
+    }
+
 }
 
 /* ===== Adaptive 576px styles end ===== */
+
+/* ===== Adaptive 510px styles start ===== */
+@media (max-width: 510px) {
+    .top {
+        min-height: 100vh;
+        background: url("../Images/I.png"), #050505;
+        background-position-y: bottom;
+        background-position-x: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+/* ===== Adaptive 510px styles end ===== */
 
 
 /* ===== Adaptive 450px styles start ===== */
@@ -2380,7 +2407,8 @@ textarea.error {
     .top {
         min-height: 100vh;
         background: url("../Images/I_transparent.png"), #050505;
-        background-position: bottom left;
+        background-position-y: bottom;
+        background-position-x: -210px;
         background-repeat: no-repeat;
         background-size: cover;
     }

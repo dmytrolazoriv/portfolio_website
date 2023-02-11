@@ -19,6 +19,11 @@ $(window).on("resize", function () {
   }
 });
 
+$(document).ready(function () {
+  $('.header__menu-button-wrapper').hide();
+});
+
+
 // $('.portfolio__in-detail-wrapper').hover(function() {
 //   $(this).siblings('portfolio__in-detail-wrapper_hover').removeClass('portfolio__in-detail-wrapper_hover');
 //   $(this).addClass('portfolio__in-detail-wrapper_hover');
