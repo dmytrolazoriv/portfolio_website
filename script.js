@@ -11,7 +11,7 @@ $(document).ready(function () {
   
 });
 
-$(window).on("resize", function () {
+$(window).on("resize load", function () {
   if ($(window).width() >= 769) {
     $('.header__menu-button-wrapper').hide();
   } else if ($(window).width() <= 768) {
@@ -336,13 +336,12 @@ new fullpage('#fullpage', {
   anchors: ['top', 'about__me', 'skills', 'portfolio', 'contact__me'],
   afterLoad: function () {
     if ($('body').attr('class').match(/fp-viewing-about__me|fp-viewing-skills|fp-viewing-portfolio|fp-viewing-contact__me/)) {
-      $('.menu').addClass('active');
+      // $('.menu').addClass('active');
       $('.social-links').addClass('active');
       $('ul.menu-dropdown li').addClass('inversion');
-    }
-    else {
-      $('.menu').removeClass('active');
-      $('ul.menu-dropdown li').removeClass('inversion');
+    } else {
+      // $('.menu').removeClass('active');
+      // $('ul.menu-dropdown li').removeClass('inversion');
     }
   }
 });
@@ -352,12 +351,11 @@ new fullpage('#fullpage', {
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 800) {
     $('.menu').addClass('active');
-  }
-  else {
+  } else {
     $('.menu').removeClass('active');
-    $('.social-links').removeClass('active');
   }
 });
+
 // Fixed header when scrolling
 
 // Filtration start

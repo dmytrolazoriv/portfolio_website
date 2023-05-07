@@ -464,7 +464,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
-                    <nav class="menu" id="header__menu">
+                    <nav class="menu active" id="header__menu">
                         <ul class="menu__main-list">
                             <li class="menu__item" data-menuanchor="about__me">
                                 <a class="menu__link" href="#about__me" lang="ua">Послуги</a>
@@ -533,23 +533,32 @@
                             <li class="header__social-item">
                                 <a class="header__social-link" href="mailto:dmytrolazoriv@outlook.com" target="_blank">
                                     <span class="visually-hidden">Email</span>
-                                    <img class="header__social-img" src="Images/email-icon.svg" width="38" height="36"
-                                        alt="">
+                                    <!-- <img class="header__social-img" src="Images/email-icon.svg" width="38" height="36"
+                                        alt=""> -->
+                                <svg height="36px" width="38px">
+                                    <use xlink:href="#email" class="email" />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="header__social-item">
                                 <a class="header__social-link" href="https://github.com/dmytrolazoriv" target="_blank">
                                     <span class="visually-hidden">GitHub</span>
-                                    <img class="header__social-img" src="Images/github-icon.svg" width="35" height="35"
-                                        alt="">
+                                    <!-- <img class="header__social-img" src="Images/github-icon.svg" width="35" height="35"
+                                        alt=""> -->
+                                        <svg height="35px" width="35px">
+                                            <use xlink:href="#github" class="github" />
+                                        </svg>
                                 </a>
                             </li>
                             <li class="header__social-item">
                                 <a class="header__social-link" href="https://www.linkedin.com/in/dmytro-lazoriv/"
                                     target="_blank">
                                     <span class="visually-hidden">LinkedIn</span>
-                                    <img class="header__social-img" src="Images/linkedin-icon.svg" width="39"
-                                        height="39" alt="">
+                                    <!-- <img class="header__social-img" src="Images/linkedin-icon.svg" width="39"
+                                        height="39" alt=""> -->
+                                    <svg height="39px" width="39px">
+                                        <use xlink:href="#linkedin" class="linkedin" />
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
@@ -973,6 +982,20 @@
                 </div> <!-- container -->
             </footer> <!-- footer -->
         </section> <!-- contacts -->
+
+        		<!-- svg elements -->
+                <svg style="display: none;">
+                    <symbol id="github" viewBox="0 0 35 35">
+                        <path class="github" d="M17.484 0C7.824-.004 0 7.816 0 17.469c0 7.633 4.895 14.121 11.711 16.504.918.23.777-.422.777-.867v-3.027c-5.301.621-5.516-2.887-5.871-3.473-.719-1.227-2.418-1.539-1.91-2.125 1.207-.621 2.438.156 3.863 2.262 1.031 1.527 3.043 1.27 4.062 1.016a4.93 4.93 0 0 1 1.356-2.375c-5.492-.984-7.781-4.336-7.781-8.32 0-1.934.637-3.711 1.887-5.145-.797-2.363.074-4.387.191-4.688 2.27-.203 4.629 1.625 4.813 1.77 1.289-.348 2.762-.531 4.41-.531 1.656 0 3.133.191 4.434.543.441-.336 2.629-1.906 4.738-1.715.113.301.965 2.277.215 4.609 1.266 1.438 1.91 3.23 1.91 5.168 0 3.992-2.305 7.348-7.812 8.316.472.464.846 1.017 1.102 1.628a4.98 4.98 0 0 1 .386 1.927v4.395c.031.352 0 .699.586.699 6.918-2.332 11.898-8.867 11.898-16.566C34.965 7.816 27.137 0 17.484 0z" fill="#000"/>
+                    </symbol>
+                    <symbol id="email" viewBox="0 0 38 36">
+                        <path d="M17.861 7.367c2.825 0 5.486 1.252 7.437 3.21v.006c0-.94.632-1.651 1.507-1.651h.222c1.379 0 1.656 1.301 1.656 1.711l.006 14.609c-.096.957.989 1.452 1.591.837 2.341-2.408 5.148-12.394-1.458-18.175-6.16-5.396-14.429-4.505-18.825-1.475-4.672 3.228-7.659 10.359-4.758 17.06 3.168 7.306 12.225 9.486 17.616 7.312 2.729-1.102 3.987 2.582 1.15 3.788-4.275 1.823-16.187 1.637-21.751-7.998-3.759-6.508-3.56-17.958 6.414-23.889C16.289-1.829 26.348-.571 32.411 5.76c6.336 6.624 5.97 19.018-.216 23.836-2.802 2.191-6.962.06-6.932-3.132l-.031-1.041c-1.951 1.932-4.546 3.065-7.371 3.065-5.588 0-10.508-4.921-10.508-10.503 0-5.642 4.92-10.616 10.508-10.616v-.002zm7.029 10.214c-.212-4.09-3.247-6.552-6.914-6.552h-.139c-4.227 0-6.576 3.33-6.576 7.105 0 4.233 2.836 6.906 6.558 6.906 4.155 0 6.882-3.04 7.081-6.636l-.01-.823z" fill="#000"/>
+                    </symbol>
+                    <symbol id="linkedin" viewBox="0 0 39 39">
+                        <path d="M19.2 0C8.596 0 0 8.596 0 19.2s8.596 19.2 19.2 19.2 19.2-8.596 19.2-19.2S29.804 0 19.2 0zm-4.7 27.158h-3.888V14.646H14.5v12.512zM12.532 13.11c-1.228 0-2.022-.87-2.022-1.946 0-1.098.818-1.942 2.072-1.942s2.022.844 2.046 1.942c0 1.076-.792 1.946-2.096 1.946zM28.7 27.158h-3.888v-6.934c0-1.614-.564-2.71-1.97-2.71-1.074 0-1.712.742-1.994 1.456-.104.254-.13.614-.13.972v7.214h-3.89v-8.52a83.59 83.59 0 0 0-.102-3.992h3.378l.178 1.738h.078c.512-.816 1.766-2.02 3.864-2.02 2.558 0 4.476 1.714 4.476 5.398v7.398z" fill="#000"/>
+                    </symbol>
+                    </svg>
+                    <!-- svg elements -->
 
     </main> <!-- main -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
